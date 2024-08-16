@@ -15,6 +15,217 @@ header {
   align-items: center;
   padding: 20px 0;
 }
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-now {
+  margin-left: auto;
+}
+
+/* .nav-items {
+  display: none;
+} */
+.menu-button {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .nav-items a:not(.start-now):not(.menu-button) {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav-items {
+    justify-content: flex-end;
+  }
+
+  .start-now,
+  .menu-button {
+    margin-left: 0;
+  }
+
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* .benefits-images {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  } */
+
+  .benefits-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20 auto;
+    margin: 20 auto;
+    justify-content: center;
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
+  .benefit-icon {
+    margin-right: 15px;
+    flex-shrink: 0;
+    padding-bottom: 10px;
+  }
+
+  .cta-features {
+    flex-direction: column;
+  }
+
+  .faq-buttons {
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px;
+    justify-content: space-between; */
+  }
+
+  /* .blog-grid {
+    display: flex;
+    flex-direction: column;
+  } */
+  /* .blog-load-more {
+    display: flex;
+    width: 100px;
+  } */
+
+  .signup-form {
+    flex-direction: column;
+  }
+
+  .client-logo-list {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* .nav-items a {
+    display: none;
+  }
+  .nav-items .start-now {
+    display: block;
+  } */
+  /* .menu-button {
+    display: block;
+  } */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .nav-items a:not(.start-now):not(.menu-button) {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav-items {
+    justify-content: flex-end;
+  }
+
+  .start-now,
+  .menu-button {
+    margin-left: 0;
+  }
+
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .benefits-images {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .benefits-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  .blog-post {
+    /* display: flex;
+    flex-direction: column;
+    flex-grow: 1; */
+    /* display: block;
+    width: min(100%, 500px);
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* flex: 1 1 100;
+    max-width: 100%; */
+  }
+  /* .blog-image {
+    width: 100%;
+    height: auto;
+  } */
+  /* .benefits-list {
+    flex-grow: 1;
+  }
+  .benefits-images {
+    display: block;
+    flex-grow: 1;
+  }
+  .benefit-image {
+    display: block;
+  } */
+  /* .image-section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-image {
+    max-width: 100%;
+    height: auto;
+  } */
+}
+
 .logo {
   font-weight: bold;
   font-size: 24px;
@@ -270,7 +481,6 @@ p {
   color: #666;
 }
 
-/* Add Font Awesome for icons */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 .blog {
